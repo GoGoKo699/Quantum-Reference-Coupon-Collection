@@ -1,0 +1,25 @@
+# Quantum Reference Coupon Collection
+
+> Exact support recovery from quantum signal and reference copies under common unknown per-label phases.
+
+The state copies are specified in the source model. For fixed missing-set size and linear budgets, the exact limiting minimax success depends on the harmonic combination of the two copy rates. A small paired receiver gives the linear copy scaling, and larger symmetry blocks approach the finite occupancy converse in a different regime. Independent phase mismatch changes these guarantees.
+
+## Scientific routes
+
+- [Project overview](README.md)
+- [Connected account](science/README.md)
+- [Model and minimax criterion](science/model.md)
+- [Finite paired receiver](science/paired-receiver.md)
+- [Histogram converse and classical threshold](science/histogram-converse.md)
+- [Block receiver and finite decoding gap](science/block-receiver.md)
+- [Exact finite collective problem and linear-budget limit](science/linear-budget.md)
+- [Phase mismatch](science/phase-mismatch.md)
+- [Copy and implementation costs](science/resources.md)
+- [Prior work and attribution](references/RELATED_WORK.md)
+
+## Learning and reproduction
+
+- [Learning route](learning/README.md)
+- [Educational source bridge](learning/BRS_BRIDGE.md)
+- [Thirty project milestones](learning/MILESTONES.md)
+- [Finite verification and its coverage](verification/README.md)
