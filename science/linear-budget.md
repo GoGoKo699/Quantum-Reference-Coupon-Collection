@@ -74,17 +74,17 @@ Put $`r=R/N`$ for $`N>0`$. Let $`X`$ be an independent marking of those position
 
 Write $`A`$ and $`B`$ for the column operators of $`f_M(Y)`$ and $`f_M(X)`$ in the common space of the coupling. Both have Hilbert–Schmidt norm at most $`\sqrt{D}`$. Since $`\mathbb E_C\sum_{j\in M}C_j=Nm/n`$, the average squared distance per hypothesis is at most $`m\sqrt{Nr(1-r)}/n`$, which tends to zero when $`m`$ is fixed and $`N`$ is linear in $`n`$.
 
-For any measurement, the absolute difference in the two scores is at most the sum of the trace norms of the differences of the corresponding pure-state operators. That sum is at most $`(\|A\|_2+\|B\|_2)\|A-B\|_2`$. Taking the two optima in the common ambient space and averaging over $`C`$ shows that $`\mathbb E_C|F(G_C)-F(\widetilde G_C)|/D\to 0`$, where $`\widetilde G_c=B^*B`$ is the Gram matrix from independent marking. Here and below $`\|\cdot\|_2`$ is Hilbert–Schmidt norm and $`\|\cdot\|_1`$ is trace norm.
+For any measurement, the absolute difference in the two scores is at most the sum of the trace norms of the differences of the corresponding pure-state operators. That sum is at most $`(\lVert A\rVert_2+\lVert B\rVert_2)\lVert A-B\rVert_2`$. Taking the two optima in the common ambient space and averaging over $`C`$ shows that $`\mathbb E_C|F(G_C)-F(\widetilde G_C)|/D\to 0`$, where $`\widetilde G_c=B^*B`$ is the Gram matrix from independent marking. Here and below $`\lVert \cdot\rVert_2`$ is Hilbert–Schmidt norm and $`\lVert \cdot\rVert_1`$ is trace norm.
 
 For the square-root score, the matrix estimate
 
 ```math
-\left\|\sqrt{G_c}-\sqrt{\widetilde G_c}\right\|_2^2
-\le\|G_c-\widetilde G_c\|_1
-\le(\|A\|_2+\|B\|_2)\|A-B\|_2
+\left\lVert \sqrt{G_c}-\sqrt{\widetilde G_c}\right\rVert_2^2
+\le\lVert G_c-\widetilde G_c\rVert_1
+\le(\lVert A\rVert_2+\lVert B\rVert_2)\lVert A-B\rVert_2
 ```
 
-follows from the Powers–Størmer inequality and Cauchy–Schwarz for trace norm products. The squared diagonal score changes by at most $`2\sqrt D\,\|\sqrt{G_c}-\sqrt{\widetilde G_c}\|_2`$. Averaging and using the same coupling bound gives $`\mathbb E_C|F_{\mathrm{sq}}(G_C)-F_{\mathrm{sq}}(\widetilde G_C)|/D\to 0`$. [Powers and Størmer, matrix square-root inequality](https://doi.org/10.1007/BF01645492)
+follows from the Powers–Størmer inequality and Cauchy–Schwarz for trace norm products. The squared diagonal score changes by at most $`2\sqrt D\,\lVert \sqrt{G_c}-\sqrt{\widetilde G_c}\rVert_2`$. Averaging and using the same coupling bound gives $`\mathbb E_C|F_{\mathrm{sq}}(G_C)-F_{\mathrm{sq}}(\widetilde G_C)|/D\to 0`$. [Powers and Størmer, matrix square-root inequality](https://doi.org/10.1007/BF01645492)
 
 ## Discriminating the independent ensemble
 
