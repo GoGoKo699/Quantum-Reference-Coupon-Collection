@@ -23,11 +23,11 @@ Let $\rho_M^{\le K}$ keep only the sectors with $c_j\le K$ for each $j\in M$. Th
 For any measurement with missing-set effects $E_M$, its uniform-prior success under the phase and mismatch distribution obeys
 
 ```math
-\frac{1}{\binom{n}{m}}\sum_M\operatorname{Tr}(E_M\rho_M)
+\frac{1}{\binom{n}{m}}\sum_M\mathrm{Tr}(E_M\rho_M)
 \le
 \frac{(n/k)^T\lambda_K^{-m}}{\binom{n}{m}}
 +
-m\Pr\left\{\operatorname{Bin}\!\left(R,\frac1n\right)>K\right\}.
+m\Pr\left\{\mathrm{Bin}\!\left(R,\frac1n\right)>K\right\}.
 ```
 
 For the first term use the positive-semidefinite bound and $\sum_M E_M=I$. For the second term use that each missing label appears only in reference registers, so its total histogram count has the indicated binomial distribution. This statement about counts holds even when the phase mismatch is unknown.
@@ -84,7 +84,7 @@ q_b=\frac{k}{n}\frac{b}{b+1}v_S.
 This is also the exact total variation distance between the matched and
 mismatched one-block laws of the histogram and comparison flag.
 For a pair, the antisymmetric probability for a present-present edge
-$\{i,j\}$ is $(1-\cos(\theta_i-\theta_j))/(nk)$. Every missing-present edge
+$`\{i,j\}`$ is $(1-\cos(\theta_i-\theta_j))/(nk)$. Every missing-present edge
 keeps probability $1/(2nk)$. The total false-edge probability is $q_1$.
 [Paired receiver](paired-receiver.md)
 
@@ -125,7 +125,7 @@ since the complex mean minimizes the sum of squared distances to
 $e^{i\theta_i}$ and the chord from $1$ is at most $|\theta_i|$.
 
 For example, fix $m$, take $R/n\to\beta>0$, and use
-$T_0=\lfloor\gamma k\log k\rfloor$ with $0<\gamma<1$ and
+$T_0=\lfloor\gamma k\log k\rfloor$ with $0\lt \gamma\lt 1$ and
 $1\ll b\ll\log n$. If $\sup_{S,\theta}v_S=o(n^{\gamma-1}/b)$, the
 receiver attains the matched-model limit $(1-e^{-\beta})^m$ throughout
 the mismatch class. When this class includes the matched model, its

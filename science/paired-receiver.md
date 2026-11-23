@@ -1,14 +1,14 @@
 # Paired receiver for sparse missing sets
 
-On one signal and one reference measure in the orthonormal basis containing $|ii\rangle$ and, for $i<j$,
+On one signal and one reference measure in the orthonormal basis containing $|ii\rangle$ and, for $i\lt j$,
 
 ```math
 |ij;\pm\rangle=\frac{|i\rangle|j\rangle\pm|j\rangle|i\rangle}{\sqrt 2}.
 ```
 
-The minus amplitude is $e^{\mathrm i(\phi_i+\phi_j)}(\mathbf 1_{i\in S}-\mathbf 1_{j\in S})/\sqrt{2nk}$. Thus a minus outcome records an unordered edge $\{i,j\}$ with one endpoint present and the other missing. Each such edge occurs with probability $1/(2nk)$. All other minus outcomes have probability zero. The measurement resolves the label pair as well as the exchange sign.
+The minus amplitude is $e^{\mathrm i(\phi_i+\phi_j)}(\mathbf 1_{i\in S}-\mathbf 1_{j\in S})/\sqrt{2nk}$. Thus a minus outcome records an unordered edge $`\{i,j\}`$ with one endpoint present and the other missing. Each such edge occurs with probability $1/(2nk)$. All other minus outcomes have probability zero. The measurement resolves the label pair as well as the exchange sign.
 
-For example, take four labels and $M=\{4\}$. The three minus outcomes $\{1,4\},\{2,4\},\{3,4\}$ each occur with probability $1/24$. Upon seeing two different edges, their common endpoint is 4. Under this decoding rule, after $L$ pairs failure means that zero or only one distinct edge was observed. For a single missing label and any $n\ge3$, the exact failure probability is
+For example, take four labels and $`M=\{4\}`$. The three minus outcomes $`\{1,4\},\{2,4\},\{3,4\}`$ each occur with probability $1/24$. Upon seeing two different edges, their common endpoint is 4. Under this decoding rule, after $L$ pairs failure means that zero or only one distinct edge was observed. For a single missing label and any $n\ge3$, the exact failure probability is
 
 ```math
 k\left(1-\frac{k-1}{2nk}\right)^L
@@ -35,7 +35,7 @@ m e^{-\mu/8}+mr(2e/r)^{\mu/2}\le 9m e^{-\mu/8},
 
 The second inequality uses $r^{1-\mu/2}\le 8^{1-\mu/2}$. No independence of degrees within a shot is needed for the union bound. If the procedure returns the wrong output size, finish by an arbitrary $m$-set. This fallback never changes a correct classification.
 
-Together, the two cases give error at most $\delta$ using $L=\lceil 64 n\log(9m/\delta)\rceil$ copies of **each** source. If $k<2m$, direct basis sampling instead recovers $S$ after $O(k\log(k/\delta))$ signals by collecting all present labels. The useful sample gap is in the sparse-missing regime. For fixed $m$ and fixed error, reference-assisted reception needs only a linear number of specimens, while the unrestricted [zero-reference optimum](histogram-converse.md) has the classical coupon scale.
+Together, the two cases give error at most $\delta$ using $L=\lceil 64 n\log(9m/\delta)\rceil$ copies of **each** source. If $k\lt 2m$, direct basis sampling instead recovers $S$ after $O(k\log(k/\delta))$ signals by collecting all present labels. The useful sample gap is in the sparse-missing regime. For fixed $m$ and fixed error, reference-assisted reception needs only a linear number of specimens, while the unrestricted [zero-reference optimum](histogram-converse.md) has the classical coupon scale.
 
 ## Implementation
 

@@ -46,7 +46,7 @@ F(G)
 \sum_M\langle a_M,E_M a_M\rangle,\\
 &=
 \min_{Y=Y^*,\,Y\succeq a_M a_M^*\,\forall M}
-\operatorname{Tr}Y.
+\mathrm{Tr}Y.
 \end{aligned}
 ```
 
@@ -64,7 +64,7 @@ In the actual register space it uses effects $S^{-1/2}|v_{M,c}\rangle\langle v_{
 
 Fix $c$ and give the $N$ abstract word positions labels with multiplicities $c$. Mark a uniformly random subset $Y$ of $R$ positions as reference positions. The vectors whose Gram matrix is $G_c$ can be realized as indicator functions $f_M(Y)$ that every position labeled in $M$ belongs to $Y$.
 
-Put $r=R/N$ for $N>0$. Let $X$ be an independent Bernoulli-$r$ marking of the same positions. Couple $X$ to $Y$ by removing uniformly chosen marked positions when $|X|>R$ and adding uniformly chosen unmarked positions when $|X|<R$. Exchangeability makes $Y$ uniform. The expected number of changed positions is $\mathbb E\bigl[\bigl||X|-R\bigr|\bigr]\le\sqrt{Nr(1-r)}$. By exchangeability and a union bound,
+Put $r=R/N$ for $N>0$. Let $X$ be an independent Bernoulli-$r$ marking of the same positions. Couple $X$ to $Y$ by removing uniformly chosen marked positions when $|X|>R$ and adding uniformly chosen unmarked positions when $|X|\lt R$. Exchangeability makes $Y$ uniform. The expected number of changed positions is $\mathbb E\bigl[\bigl||X|-R\bigr|\bigr]\le\sqrt{Nr(1-r)}$. By exchangeability and a union bound,
 
 ```math
 \mathbb E\left|f_M(Y)-f_M(X)\right|^2
@@ -94,7 +94,7 @@ The independent-marking event for label $j$ has probability $p_j=r^{c_j}$. Use t
 d_M=\prod_{j\in M}(p_j-p_j^2).
 ```
 
-The remaining component lies in the subspace indexed by subsets of size less than $m$. All $|M\rangle$ components are orthogonal. Projecting onto them attains total score at least $\sum_M d_M$. For any measurement the lower-subspace components contribute at most its dimension $L=\sum_{\ell<m}\binom{n}{\ell}$, because every column has norm at most one and the compressed effects sum to the subspace identity. Cauchy–Schwarz bounds the absolute cross contribution by $2\sqrt{LD}$. Therefore
+The remaining component lies in the subspace indexed by subsets of size less than $m$. All $|M\rangle$ components are orthogonal. Projecting onto them attains total score at least $\sum_M d_M$. For any measurement the lower-subspace components contribute at most its dimension $L=\sum_{\ell\lt m}\binom{n}{\ell}$, because every column has norm at most one and the compressed effects sum to the subspace identity. Cauchy–Schwarz bounds the absolute cross contribution by $2\sqrt{LD}$. Therefore
 
 ```math
 \sum_M d_M
@@ -102,7 +102,7 @@ The remaining component lies in the subspace indexed by subsets of size less tha
 \le \sum_M d_M+L+2\sqrt{LD}.
 ```
 
-The same lower bound holds for the square-root score. The orthogonal $|M\rangle$ components give $\widetilde G_c\succeq\operatorname{diag}(d_M)$. Operator monotonicity of square root gives $\sqrt{\widetilde G_c}\succeq\operatorname{diag}(\sqrt{d_M})$, hence $F_{\mathrm{sq}}(\widetilde G_c)\ge\sum_M d_M$. For fixed $m$, $L/D\to 0$.
+The same lower bound holds for the square-root score. The orthogonal $|M\rangle$ components give $\widetilde G_c\succeq\mathrm{diag}(d_M)$. Operator monotonicity of square root gives $\sqrt{\widetilde G_c}\succeq\mathrm{diag}(\sqrt{d_M})$, hence $F_{\mathrm{sq}}(\widetilde G_c)\ge\sum_M d_M$. For fixed $m$, $L/D\to 0$.
 
 ## Taking the limit
 
@@ -124,4 +124,4 @@ e^{-m\alpha}\left(1-e^{-\alpha\beta/(\alpha+\beta)}\right)^m,
 
 The likelihood factor $(n/k)^T$ tends to $e^{m\alpha}$. The same argument for $F$ and $F_{\mathrm{sq}}$ proves both the exact collective limit and its attainment. If either budget coefficient is zero and the other is finite, the limit is zero. To see this, increase every zero budget coefficient to any positive constant, use monotonicity in the copy budget, and let that constant decrease to zero.
 
-For fixed total linear budget $\alpha+\beta=s$, the exact limiting success is maximized by $\alpha=\beta=s/2$. A target limiting success $1-\delta$, with $0<\delta<1$, requires total budget coefficient $s\ge 4\log[1/(1-(1-\delta)^{1/m})]$ under this equal-price copy count.
+For fixed total linear budget $\alpha+\beta=s$, the exact limiting success is maximized by $\alpha=\beta=s/2$. A target limiting success $1-\delta$, with $0\lt \delta\lt 1$, requires total budget coefficient $s\ge 4\log[1/(1-(1-\delta)^{1/m})]$ under this equal-price copy count.

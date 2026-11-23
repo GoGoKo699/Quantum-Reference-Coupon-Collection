@@ -41,9 +41,9 @@ For $1\le m\le n/3$ and $T\le(1-\epsilon)k\log k$, a receiver achieving at least
 
 ## Fixed number of missing labels
 
-If $m$ is fixed, $R/n\to\beta<\infty$ and $T=o(n\log n)$, then $A$ converges in law to $\operatorname{Binomial}(m,e^{-\beta})$ while $B$ diverges in probability. The converse tends to $\Pr(A=0)=(1-e^{-\beta})^m$. The [block receiver](block-receiver.md) matches it when $T/n$ diverges.
+If $m$ is fixed, $R/n\to\beta\lt \infty$ and $T=o(n\log n)$, then $A$ converges in law to $\mathrm{Binomial}(m,e^{-\beta})$ while $B$ diverges in probability. The converse tends to $\Pr(A=0)=(1-e^{-\beta})^m$. The [block receiver](block-receiver.md) matches it when $T/n$ diverges.
 
-In the coupon threshold window $T/k+R/n-\log k\to t$ with $R/n\to\beta$, the limits are independent $\operatorname{Binomial}(m,e^{-\beta})$ and $\operatorname{Poisson}(e^{-t})$. Indeed, for fixed nonnegative $a,b$ their finite joint falling factorial moments are
+In the coupon threshold window $T/k+R/n-\log k\to t$ with $R/n\to\beta$, the limits are independent $\mathrm{Binomial}(m,e^{-\beta})$ and $\mathrm{Poisson}(e^{-t})$. Indeed, for fixed nonnegative $a,b$ their finite joint falling factorial moments are
 
 ```math
 \mathbb E[(A)_a(B)_b]=(m)_a(k)_b

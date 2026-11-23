@@ -8,7 +8,7 @@ Reserve $T_0$ signal copies for basis measurements. Form $R$ disjoint blocks, ea
 
 If the reference belongs to the present support, its normalized component is identical to the signal. The block accepts. The combined histogram has $b+1$ present draws. If its reference label is a missing $j$, the block contains exactly one $j$. With the histogram fixed, the $b+1$ possible positions of $j$ lie in orthogonal subspaces. The block has equal norm in each position after symmetrization, which has squared overlap $1/(b+1)$ with its original position sector. Hence any particular missing $j$ produces a rejected histogram with probability $b/[n(b+1)]$. Conditional on that event, its other labels are distributed as $b$ independent present draws, with repetitions retained.
 
-A possible output of a three-register block is the rejected histogram $\{1,1,4\}$. If the reserved basis sample has already seen 1, then the rejected block identifies 4. Repetitions carry no additional information about 1 in this decoding step.
+A possible output of a three-register block is the rejected histogram $`\{1,1,4\}`$. If the reserved basis sample has already seen 1, then the rejected block identifies 4. Repetitions carry no additional information about 1 in this decoding step.
 
 ## Recover observed memberships, then complete
 

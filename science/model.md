@@ -1,6 +1,6 @@
 # Source model and exact recovery
 
-A label is a known computational-basis state of an $n$-dimensional register. An unknown set $M\subset[n]$ of $m$ labels is missing, with $1\le m<n$. The present set is $S=[n]\setminus M$ and $k=n-m$. We know $n$ and $m$.
+A label is a known computational-basis state of an $n$-dimensional register. An unknown set $M\subset[n]$ of $m$ labels is missing, with $1\le m\lt n$. The present set is $S=[n]\setminus M$ and $k=n-m$. We know $n$ and $m$.
 
 The two sources supply
 
