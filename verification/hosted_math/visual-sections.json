@@ -1,0 +1,16 @@
+{
+  "README.md": [
+    "Run a receiver"
+  ],
+  "science/paired-receiver.md": [
+    "Implementation",
+    "More than one missing label"
+  ],
+  "science/block-receiver.md": [
+    "Circuit for the promised block",
+    "Recover observed memberships, then complete"
+  ],
+  "science/linear-budget.md": [
+    "Exact finite reduction"
+  ]
+}
